@@ -19,11 +19,13 @@ namespace M1S02ex5
         }
         private void CalcularMulta()
         {
-            var soma = Multa + Valor; 
+            var soma = Multa + Valor;
+            Console.WriteLine(soma);
         }
        public void CalculoReal()
         {
-            CalcularMulta(); 
+            CalcularMulta();
+          
         }
     }
     
