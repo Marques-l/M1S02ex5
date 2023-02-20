@@ -7,25 +7,22 @@ using System.Threading.Tasks;
 
 namespace M1S02ex5
 {
-    internal class Cobrar
+    public class Cobrar
     {
-        private decimal valor;
-        private decimal multa;
-        public decimal soma; 
-       public void Calcular(decimal Valor, decimal Multa)
+        private decimal Valor;
+        private decimal Multa;
+        public decimal Soma; 
+       public void Calcular()
         {
-            Valor = valor;
-            Multa = multa; 
+            
         }
-        private void CalcularMulta()
+        private void CalcularMulta(decimal valor, decimal multa, decimal soma)
         {
-            soma = valor + multa;
-            return; 
+            Valor= valor;
+            Multa= multa;
+            Soma= soma;
         }
-        public void Calcular()
-        {
-            CalcularMulta(); 
-        }
+       
     }
     
 }
