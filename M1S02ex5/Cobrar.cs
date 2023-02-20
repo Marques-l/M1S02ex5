@@ -9,20 +9,22 @@ namespace M1S02ex5
 {
     public class Cobrar
     {
-        private decimal Valor;
-        private decimal Multa;
-        public decimal Soma; 
-       public void Calcular()
+        public decimal Valor { get; set; }
+        public decimal Multa { get; set; }
+        public  Cobrar(decimal valor, decimal multa)
         {
-            
+            Valor = valor;
+            Multa = multa;
+           
         }
-        private void CalcularMulta(decimal valor, decimal multa, decimal soma)
+        private void CalcularMulta()
         {
-            Valor= valor;
-            Multa= multa;
-            Soma= soma;
+            var soma = Multa + Valor; 
         }
-       
+       public void CalculoReal()
+        {
+            CalcularMulta(); 
+        }
     }
     
 }

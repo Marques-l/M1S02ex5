@@ -1,3 +1,3 @@
 ﻿using M1S02ex5;
-Cobrar novaCobranca = new Cobrar(); 
-Console.WriteLine(novaCobranca);
+Cobrar NovaCobranca = new Cobrar(100,10);
+NovaCobranca.CalculoReal(); 
