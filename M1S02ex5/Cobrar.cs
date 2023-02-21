@@ -9,8 +9,8 @@ namespace M1S02ex5
 {
     public class Cobrar
     {
-        public decimal Valor { get; set; }
-        public decimal Multa { get; set; }
+        private decimal Valor { get; set; }
+        private decimal Multa { get; set; }
         public  Cobrar(decimal valor, decimal multa)
         {
             Valor = valor;
@@ -20,7 +20,7 @@ namespace M1S02ex5
         private void CalcularMulta()
         {
             var soma = Multa + Valor;
-            Console.WriteLine(soma);
+            Console.WriteLine($"O valor é: {Valor}, a multa é: {Multa} e o total é: {soma}"); 
         }
        public void CalculoReal()
         {
